@@ -1,0 +1,1 @@
+(function hitokoto(){var hitokoto="到底是孤独的人强大，还是强大的人孤独。";var dom=document.querySelector('#hitokoto');Array.isArray(dom)?dom[0].innerText=hitokoto:dom.innerText=hitokoto;})()
