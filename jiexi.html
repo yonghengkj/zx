@@ -1,0 +1,223 @@
+<!doctype html>
+<!DOCTYPE html><html><head><meta charset="utf-8">
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+<title>永恒解析 / 下载-哔哩哔哩/微博/抖音/皮皮虾/快手/Instagram小视频解析无水印下载</title>
+<meta name="Keywords" content="视频解析,视频下载,视频去水印,视频无水印,视频无水印下载,哔哩哔哩视频下载,微博视频下载,抖音视频下载,西瓜视频下载,皮皮虾视频下载,快手视频下载,陌陌视频下载,Instagram视频下载">
+<meta name="description" content="哔哩哔哩/微博/绿洲/抖音/西瓜视频/皮皮虾/快手/微视/全民小视频/最右/陌陌/Instagram/全民K歌/开眼/Vue Vlog/巴塞电影无水印下载。">
+
+<!--禁止百度转码-->
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+<!--浏览器ICO-->
+<link rel="shortcut icon" href="https://xz.idato.xyz/favicon.ico">
+<link rel="bookmark" href="favicon.ico">
+
+<!-- 引入样式 -->
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<!-- 引入组件库 -->
+<script type="text/javascript" src="js/vue.js"></script>
+<script type="text/javascript" src="js/index_1.js"></script>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/mdui.js"></script>
+<link rel="stylesheet" href="css/DPlayer.min.css">
+<script src="js/DPlayer.min.js"></script>
+
+<style>
+#app{font-family: "Microsoft YaHei"}
+.down{text-align: center;}
+.down a{text-decoration: none;}
+
+@media screen and (max-width: 768px){
+#app{margin-left: 5px !important; margin-right: 5px !important;}
+#wap{display: none;}
+iframe{height: 200px !important;}
+.el-select{width: 100% !important;}
+.el-input{width: 100% !important; margin-top: 10px;}
+.el-button{width: 100% !important; margin-top: 10px;}
+.el-button--primary{width: 40% !important;}
+.el-button--warning{width: 40% !important;}
+.tips{text-align: center; margin: 0 5px !important;}
+}
+</style>
+
+</head>
+<body>
+
+<div id="app" style="margin-left: 100px; margin-right: 100px;">
+<el-backtop></el-backtop>
+
+<div style="margin: 5px 0; height: 1px; background-color: #f5f5f5;"></div>
+
+<div class="main" style="margin: 10px 0;">
+
+<div class="vlogo" style="margin: 25px 0;">
+	<template>
+        <div class="block" style="text-align: center">
+		<el-avatar shape="square" :size="50" :src="squareUrl1" title="哔哩哔哩"></el-avatar>
+		<el-avatar shape="square" :size="50" :src="squareUrl2" title="微博"></el-avatar>
+        <el-avatar shape="square" :size="50" :src="squareUrl3" title="绿洲"></el-avatar>
+		<el-avatar shape="square" :size="50" :src="squareUrl4" title="抖音"></el-avatar>
+		<el-avatar shape="square" :size="50" :src="squareUrl5" title="西瓜视频"></el-avatar>
+		<el-avatar shape="square" :size="50" :src="squareUrl6" title="皮皮虾"></el-avatar>
+		<el-avatar shape="square" :size="50" :src="squareUrl7" title="快手"></el-avatar>
+		<el-avatar shape="square" :size="50" :src="squareUrl8" title="微视"></el-avatar> 
+        <el-avatar shape="square" :size="50" :src="squareUrl9" title="全民小视频"></el-avatar>
+        <el-avatar shape="square" :size="50" :src="squareUrl10" title="最右"></el-avatar>
+		<el-avatar shape="square" :size="50" :src="squareUrl11" title="陌陌"></el-avatar>
+		<el-avatar shape="square" :size="50" :src="squareUrl12" title="Instagram"></el-avatar>
+		<el-avatar shape="square" :size="50" :src="squareUrl13" title="全民K歌"></el-avatar>
+		<el-avatar shape="square" :size="50" :src="squareUrl14" title="开眼"></el-avatar>
+		<el-avatar shape="square" :size="50" :src="squareUrl15" title="Vue Vlog"></el-avatar>
+		</div>
+	</template>
+</div>
+	<div class="jx" style="margin: 20px 0px;text-align:center;">
+	<el-input style="width: 68%;" prefix-icon="el-icon-paperclip" placeholder="输入视频链接，点击立即解析" v-model="input" clearable="" id="input">
+    </el-input>
+    
+	<el-button style="width: 15.5%;" type="success" plain="" @click="play">立即解析</el-button>
+	
+    
+		
+		<div class="down mdui-text-center"></div>
+		
+	</div>
+	
+	<div class="tips" style="margin: 20px 15%;">
+	<template>
+      <el-alert title="本站不提供、不存储、不传播任何视频资源，一切资源来源于互联网开源接口，仅供学习交流，如有违规请联系我们" type="warning" center="" :closable="false">
+      </el-alert>
+	 </template>
+	 </div>
+	
+	<div class="syff" style="margin: 25px 0; color: #888888; font-size: 14px;">
+	<p style="margin:10px 0; color:#555555; font-size:15px; font-weight: bold;">使用方法</p>
+	1.视频播放页面，点击分享按钮，分享弹框中复制视频链接，或者通过分享到QQ/微信获取视频链接
+	<br>
+	2.在输入框输入视频链接，点击“立即解析”，等到解析结果出来，就可以下载视频了
+    </div>
+
+	<div class="cjwt" style="margin: 25px 0px;">
+	<p style="margin:10px 0; color:#555555; font-size:15px; font-weight: bold;">常见问题</p>
+	<div class="tip" style="margin: 10px 0px;">
+	<template>
+      <el-alert title="支持哪些视频平台解析下载？" type="success" :closable="false" description="支持哔哩哔哩、微博、绿洲、抖音、西瓜视频、皮皮虾、快手、微视、全民小视频、最右、陌陌、Instagram、全民K歌、开眼、Vue Vlog、巴塞电影等平台，后期将逐渐支持更多平台。" show-icon="">
+      </el-alert>
+	</template>
+	</div>
+	
+	<div class="tip" style="margin: 10px 0px;">
+	<template>
+	  <el-alert title="部分电脑浏览器不支持直接下载视频，如何处理？" type="error" :closable="false" description="部分电脑浏览器不支持直接下载，请点击'复制视频链接'按钮，在浏览器中打开复制的链接，在视频画面上点击右键，选择'视频另存为'或'存储为'来下载视频。推荐使用360浏览器、QQ浏览器、谷歌Chrome浏览器等主流浏览器。" show-icon="">
+      </el-alert>
+	 </template>
+	 </div>
+	 
+	<div class="tip" style="margin: 10px 0px;">
+	<template>
+	  <el-alert title="Android手机上可以使用吗？" type="info" :closable="false" description="可以的，Android手机在常用的360、UC、QQ、谷歌Chrome等浏览器上都可以很方便的使用。推荐使用谷歌Chrome浏览器获得最佳下载体验。" show-icon="">
+      </el-alert>
+	 </template>
+	 </div>
+	 
+	<div class="tip" style="margin: 10px 0px;">
+	<template>
+	  <el-alert title="iOS设备（iPhone、iPad）上点击下载视频后，跳转到视频页面，并没有直接下载，如何处理？" type="warning" :closable="false" description="因iOS系统的Safari浏览器和微信内置浏览器均不支持下载文件，可以在APP Store下载免费的Documents，在Documents的内置浏览器中使用，Documents支持将下载的视频移动到手机相册。" show-icon="">
+      </el-alert>
+	 </template>
+	 </div>
+	 
+	<div class="tip" style="margin: 10px 0px;">
+	<template>
+	  <el-alert title="本站是否会存储解析后的视频信息？" type="info" :closable="false" description="本站只提供视频解析服务，不存储任何视频和图片。由于资源有限，多次解析可能存在解析失败的情况，请稍后再试。" show-icon="">
+      </el-alert>
+	 </template>
+	 </div>
+	 
+	</div>
+
+	 
+	
+	
+</div>
+
+
+
+<script>
+new Vue({
+    data() {
+      return {
+	    input: '',
+		reward: false,
+        centerDialogVisible: false,
+		squareUrl1: "t/bilibili.png",
+        squareUrl2: "t/weibo.png",
+		squareUrl3: "t/lvzhou.png",
+		squareUrl4: "t/douyin.png",
+		squareUrl5: "t/xigua.png",
+		squareUrl6: "t/pipixia.png",
+		squareUrl7: "t/kuaishou.png",
+		squareUrl8: "t/weishi.png",
+		squareUrl9: "t/quanmin.png",
+		squareUrl10: "t/zuiyou.png",
+		squareUrl11: "t/momo.png",
+		squareUrl12: "t/instagram.png",
+		squareUrl13: "t/kge.png",
+		squareUrl14: "t/kaiyan.png",
+		squareUrl15: "t/vue.png",
+        sizeList: ["large", "medium", "small"]
+      }
+    },
+	methods: {
+      play() {
+	  var data = document.getElementById("input").value;
+	    if(data == "") {
+          this.$message.warning({
+          message: '视频链接不能为空，否则无法解析视频',
+          center: true
+        });
+		}
+		else {
+    let regex = /http[s]?:\/\/[\w.]+[\w\/]*[\w.]*\??[\w=&:\-\+\%]*[/]*/;
+var vs =  data.match(regex);
+var v = vs[0];
+console.log(v);
+var xmlhttp;
+if(window.XMLHttpRequest){
+  xmlhttp=new XMLHttpRequest();
+  }
+else{// status for IE6, IE5
+xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");}
+xmlhttp.open("GET","https://api.spapi.cn/get?appkey=85ddbe2925f94af49ddf77a1fe4970ce&url="+v,false);
+xmlhttp.send();
+var jsonObj = JSON.parse(xmlhttp.responseText); 
+console.log(jsonObj);
+var status = jsonObj.status;
+if(status=='101'){
+  this.$message.success({
+          message: '解析成功',
+          center: true
+        });
+		
+$(".down").html('<p>'+jsonObj.data.title+'</p><a class="el-button el-button--primary" href="'+jsonObj.data.video+'" target="_blank" download="video">下载视频</a><a class="el-button el-button--warning" href="'+jsonObj.data.image+'" target="_blank" download="video">下载封面</a>');
+}else if(code=='102'){
+  this.$message.error({
+          message: '解析失败，视频不存在或者链接不正确',
+          center: true
+        });
+}
+	    }
+      }
+    },
+}).$mount('#app')
+</script>
+
+
+
+
+</div></body></html>
